@@ -1,0 +1,27 @@
+<nav class="navbar fixed-top navbar-expand-lg py-3 navbar-dark bg-dark shadow">
+    <div class="container-fluid" style="padding: 0% 16% 0% 10%">
+        <a routerLink="/home-page" class="navbar-brand">
+            <img src="/assets/images/logo.png" height="40" width="55" alt="Logo">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a routerLink="/home-page" class="nav-item nav-link active">Home</a>
+                <a routerLink="/breaking-news" class="nav-item nav-link">Breaking News</a>
+                <a routerLink="/latest-technologies" class="nav-item nav-link">Latest Technologies</a>
+                <a routerLink="/about-us" class="nav-item nav-link">About Us</a>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-item nav-link active" routerLink="listar-empleado">Listar Empleados</a>
+                <a class="nav-item nav-link active" routerLink="agregar-empleado">Agregar Empleados</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+  Contenido
+  <router-outlet></router-outlet>
+</div>
